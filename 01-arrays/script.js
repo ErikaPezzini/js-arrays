@@ -58,7 +58,19 @@ for (let index = 0; index < teachers.length; index++) {
 
 // 9. Unisci tutti gli insegnanti nell'array teachers in una stringa
 // separata da virgole e salvala nella variabile teachersString
-const teachersString = null;
+const teachersString = (function() {
+  let result = '';
+  for (let index = 0; index < teachers.length; index++) {
+    result += teachers[index];
+    if (index < teachers.length - 1) {
+      result += ', ';
+    }
+  }
+  return result;
+})();
+
+console.log(teachersString);
+
 
 // 10. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
