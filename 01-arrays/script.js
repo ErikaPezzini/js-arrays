@@ -49,7 +49,12 @@ for (let index = 0; index < teachers.length; index++) {
 
 // 8. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
-const lewisIndex = null;
+for (let index = 0; index < teachers.length; index++) {
+  if (teachers[index] === 'Lewis') {
+    const lewisIndex = index
+    console.log(lewisIndex);
+  }
+}
 
 // 9. Unisci tutti gli insegnanti nell'array teachers in una stringa
 // separata da virgole e salvala nella variabile teachersString
