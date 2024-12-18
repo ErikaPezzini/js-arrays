@@ -27,3 +27,12 @@ for (let index = 0; index < teachers.length; index++) {
 console.log(longNames);
 
 // 3. Rimuovi 'Ed' dall'array teachers
+
+const updatedTeachers = [];
+
+for (let index = 0; index < teachers.length; index++) {
+  if (teachers[index] !== 'Ed') {
+    updatedTeachers.push(teachers[index]);
+  }
+}
+console.log(updatedTeachers);
